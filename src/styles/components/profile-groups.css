@@ -1,0 +1,84 @@
+#profile-groups {
+  margin-top: 32px;
+}
+
+.profile-group-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 16px -10px;
+  flex-wrap: wrap;
+}
+
+.profile-group-results-item {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 125px;
+  padding: 0 10px 20px 10px;
+}
+
+.profile-group-results-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--grayscale_1);
+  text-decoration: none;
+  color: var(--midnight_black);
+
+}
+
+.profile-group-content {
+  padding: 16px 8px;
+}
+
+.profile-group-avatar {
+  display: inline-block;
+  height: 190px;
+  width: 100%;
+}
+
+.profile-group-avatar + p {
+  padding-top: 16px;
+}
+
+.profile-group-avatar + p + a {
+  padding-bottom: 16px;
+}
+
+.profile-group-avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: var(--grayscale_2);
+}
+
+/* SKELETON LOADING  */
+
+#profile-groups .skeleton-card {
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#profile-groups .skeleton-block {
+  margin: 12px 0;
+  width: 80%;
+}
+
+#profile-groups .skeleton-img {
+  width: 100%;
+  flex: 0 0 190px;
+}

@@ -1,0 +1,62 @@
+#profile-friends {
+}
+
+.profile-friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-list-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--grayscale_1);
+  padding: 16px 24px;
+  border-radius: 10px;
+}
+
+.profile-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.profile-list-item .top-friend-flag {
+  display: none;
+}
+
+.profile-list-item .top-friend-flag + .page-paragraph {
+  margin-bottom: 8px;
+}
+
+.profile-list-item-avatar {
+  display: inline-block;
+  background-color: var(--grayscale_2);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  min-width: 90px;
+}
+
+.profile-list-item-avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-list-item-info {
+  width: 100%;
+  margin-left: 24px;
+}
+
+/* SKELETON LOADING */
+
+#profile-friends .skeleton-block {
+    margin-bottom: 4px;
+}

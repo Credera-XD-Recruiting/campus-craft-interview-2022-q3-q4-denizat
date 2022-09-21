@@ -1,0 +1,83 @@
+@import "./variables/colors.css";
+@import "./variables/breakpoints.css";
+@import "./components";
+@import "./partials";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--grayscale_0);
+  color: var(--midnightBlack);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.profile-navbar {
+  height: 60px;
+  background-color: var(--grayscale_0);
+  display: none;
+}
+
+.profile-navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.profile-background-banner {
+  background-image: url("../assets/profile_banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 339px;
+  height: 339px;
+}
+
+.profile-footer {
+  height: 60px;
+  background-color: var(--grayscale_0);
+}

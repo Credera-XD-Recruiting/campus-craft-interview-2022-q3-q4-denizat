@@ -1,0 +1,50 @@
+.profile-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-avatar {
+  position: absolute;
+  top: -56px;
+  background-color: var(--grayscale_2);
+  border: 4px solid var(--grayscale_0);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 210px;
+  width: 210px;
+  z-index: 999;
+}
+
+.profile-avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-info {
+  flex: 1;
+  padding-left: 100px;
+  position: relative;
+  max-width: calc(100% - 100px);
+  transform: translateX(128px);
+  background-color: transparent;
+}
+
+.profile-info-name {
+  margin-bottom: 4px;
+  text-align: left;
+  position: relative;
+}
+
+.profile-info-name .profile-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* SKELTON LOADING */
+
+#profile-header .skeleton-block--half {
+  height: 42px;
+}

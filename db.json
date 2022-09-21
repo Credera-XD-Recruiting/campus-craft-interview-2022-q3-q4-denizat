@@ -1,0 +1,199 @@
+{
+  "profile": {
+    "id": "s9df8ske-23n23490s8-12nkk123o",
+    "firstName": "Ann",
+    "lastName": "Smith",
+    "jobTitle": "Content Artist",
+    "companyName": "ABC Advertising Co.",
+    "pinnedPost": {
+      "authorFirstName": "Jamie",
+      "authorLastName": "Cowhan",
+      "jobTitle": "Content Artist",
+      "companyName": "ABC Advertising Co.",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit.",
+      "publishDate": "2021-07-29T03:24:00",
+      "city": "Dallas",
+      "state": "TX"
+    },
+    "pinnedPosts": [
+      {
+        "authorFirstName": "Jamie",
+        "authorLastName": "Cowhan",
+        "jobTitle": "Content Artist",
+        "companyName": "ABC Advertising Co.",
+        "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit.",
+        "publishDate": "2021-07-29T03:24:00",
+        "city": "Dallas",
+        "state": "TX"
+      },
+      {
+        "authorFirstName": "Stuart",
+        "authorLastName": "Raymond",
+        "jobTitle": "Product Designer",
+        "companyName": "Facebook",
+        "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor est arcu elit feugiat. Odio in auctor magna mattis tellus. Sit ornare tincidunt id purus pulvinar fusce libero. Justo, habitasse viverra sem hendrerit.",
+        "publishDate": "2021-06-21T03:24:00",
+        "city": "Houston",
+        "state": "TX"
+      }
+    ],
+    "groups": [
+      {
+        "id": "group-a",
+        "name": "Dallas",
+        "image": "https://images.unsplash.com/photo-1580536793208-117fdb20ffc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+        "href": "https://www.google.com",
+        "activity": "active",
+        "favorite": false
+      },
+      {
+        "id": "group-b",
+        "name": "Houston",
+        "image": "https://images.unsplash.com/photo-1510623425998-4894a2ad0da9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "href": "https://www.google.com",
+        "activity": "moderate",
+        "favorite": false
+      },
+      {
+        "id": "group-c",
+        "name": "Chicago",
+        "image": "https://images.unsplash.com/photo-1597933534024-debb6104af15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "href": "https://www.google.com",
+        "activity": "inactive",
+        "favorite": false
+      },
+      {
+        "id": "group-d",
+        "name": "Denver",
+        "image": "https://images.unsplash.com/photo-1617246405400-462cb1ab98ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+        "href": "https://www.google.com",
+        "activity": "low",
+        "favorite": true
+      },
+      {
+        "id": "group-e",
+        "name": "New York",
+        "image": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "href": "https://www.google.com",
+        "activity": "moderate",
+        "favorite": false
+      },
+      {
+        "id": "group-f",
+        "name": "Los Angeles",
+        "image": "https://images.unsplash.com/photo-1563503136947-cc262fa1e423?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "href": "https://www.google.com",
+        "activity": "active",
+        "favorite": false
+      },
+      {
+        "id": "group-g",
+        "name": "San Francisco",
+        "image": "https://images.unsplash.com/photo-1504912490605-888b88cd7b94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+        "href": "https://www.google.com",
+        "activity": "low",
+        "favorite": true
+      },
+      {
+        "id": "group-h",
+        "name": "Seattle",
+        "image": "https://images.unsplash.com/photo-1535581652167-3a26c90bbf86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "href": "https://www.google.com",
+        "activity": "active",
+        "favorite": false
+      }
+    ]
+  },
+
+  "friends": [
+    {
+      "id": "s9df8ske-23n23490s8-12nkk123o",
+      "friends": [
+        {
+          "name": "Stuart Raymond",
+          "jobTitle": "Product Designer",
+          "companyName": "Facebook",
+          "topFriend": true
+        },
+        {
+          "name": "Jamie Cowhan",
+          "jobTitle": "Senior Designer",
+          "companyName": "Facebook"
+        },
+        {
+          "name": "Cain Kim",
+          "jobTitle": "Product Designer",
+          "companyName": "LinkedIn"
+        },
+        {
+          "name": "Tiffany Squires",
+          "jobTitle": "UX Designer",
+          "companyName": "Chip Consulting"
+        },
+        {
+          "name": "Paige Diaz",
+          "jobTitle": "Art Director",
+          "companyName": "Agency4",
+          "topFriend": true
+        },
+        {
+          "name": "Aleah Emmonds",
+          "jobTitle": "Product Designer",
+          "companyName": "Liberty"
+        },
+        {
+          "name": "Huda Dunkley",
+          "jobTitle": "Architect",
+          "companyName": "Epic"
+        },
+        {
+          "name": "Aden Gray",
+          "jobTitle": "Game Designer",
+          "companyName": "Voltron"
+        },
+        {
+          "name": "Joey Moreno",
+          "jobTitle": "Product Designer",
+          "companyName": "Facebook",
+          "topFriend": true
+        },
+        {
+          "name": "Darell Gentry",
+          "jobTitle": "Senior Designer",
+          "companyName": "Facebook"
+        },
+        {
+          "name": "Kellie Church",
+          "jobTitle": "Product Designer",
+          "companyName": "LinkedIn"
+        },
+        {
+          "name": "Amparo Crosby",
+          "jobTitle": "UX Designer",
+          "companyName": "Chip Consulting"
+        },
+        {
+          "name": "Terrance Robles",
+          "jobTitle": "Art Director",
+          "companyName": "Agency4",
+          "topFriend": true
+        },
+        {
+          "name": "Dudley Mcgee",
+          "jobTitle": "Product Designer",
+          "companyName": "Liberty"
+        },
+        {
+          "name": "Jack Orr",
+          "jobTitle": "Architect",
+          "companyName": "Epic"
+        },
+        {
+          "name": "Heather Li",
+          "jobTitle": "Game Designer",
+          "companyName": "Voltron"
+        }
+      ]
+    }
+  ]
+}
