@@ -14,6 +14,9 @@ const generateCardNode = (data) => {
     jobTitle,
     companyName,
     post,
+    publishDate,
+    city,
+    state,
   } = data;
   const templateId = "profile-post-item-template";
   const resultCardTemplate = document.getElementById(templateId);
@@ -24,7 +27,8 @@ const generateCardNode = (data) => {
   const avatarNode = clone.querySelector(".post-author-avatar");
 
   authorName.innerHTML = `${authorFirstName} ${authorLastName}`;
-  jobDesc.innerHTML = `${jobTitle} @ ${companyName}`;
+  let dateString = new Date(publishDate).toLocaleDateString();
+  jobDesc.innerHTML = `${jobTitle} @ ${companyName} <br> Published on ${dateString} from ${city}, ${state}`;
   postNode.innerHTML = post;
 
   if (authorAvatarSrc) {
