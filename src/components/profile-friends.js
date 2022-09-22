@@ -25,6 +25,18 @@ const generateListItemNode = (data) => {
     avatarImg.src = avatarSrc;
     avatarImg.setAttribute("aria-label", `${name}`);
     avatarNode.appendChild(avatarImg);
+  } else {
+    // const div = document.createElement("div");
+    // div.innerHTML = name
+    //   .split(" ")
+    //   .map((v) => v[0])
+    //   .join("");
+    avatarNode.innerHTML = name
+      .split(" ")
+      .map((v) => v[0])
+      .join("");
+    // div.className = "profile-list-item-initials";
+    // avatarNode.appendChild(div);
   }
 
   return clone;

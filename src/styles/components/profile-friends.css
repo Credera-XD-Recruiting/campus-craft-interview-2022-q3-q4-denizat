@@ -36,13 +36,17 @@
 }
 
 .profile-list-item-avatar {
-  display: inline-block;
+  display: flex;
   background-color: var(--grayscale_2);
   border-radius: 50%;
   overflow: hidden;
   height: 90px;
   width: 90px;
   min-width: 90px;
+
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-list-item-avatar img {
@@ -58,5 +62,5 @@
 /* SKELETON LOADING */
 
 #profile-friends .skeleton-block {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
