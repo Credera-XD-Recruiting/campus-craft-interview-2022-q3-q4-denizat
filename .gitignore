@@ -22,3 +22,6 @@ dist
 
 # other random files
 .DS_Store
+
+*.pdf
+pnpm-lock.yaml
