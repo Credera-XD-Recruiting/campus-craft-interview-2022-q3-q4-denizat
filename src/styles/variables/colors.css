@@ -4,6 +4,12 @@
   --secondary: #52c1ad;
   --warning: #c152a2;
 
+  /* using rgba so that we can change the transparency without messing with the children */
+  --lightSecondary: rgba(82, 193, 173, 0.4);
+  --lightPrimary: rgba(88, 177, 201, 0.4);
+  --lightWarning: rgba(193, 82, 162, 0.4);
+  --lightGrayscale_2: rgba(196, 196, 196, 0.4);
+
   --grayscale_0: #ffffff;
   --grayscale_1: #f8f7f7;
   --grayscale_2: #dbdbdb;

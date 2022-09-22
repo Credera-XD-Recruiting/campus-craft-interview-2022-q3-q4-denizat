@@ -13,7 +13,7 @@ const activityStates = {
  * @return {Node} generated markup for a card
  */
 const generateCardNode = (data) => {
-  const { name, href, image } = data;
+  const { name, href, image, activity } = data;
   const templateId = "profile-group-results-item-template";
   const resultCardTemplate = document.getElementById(templateId);
   const clone = document.importNode(resultCardTemplate.content, true);
@@ -22,6 +22,16 @@ const generateCardNode = (data) => {
   const groupImageNode = clone.querySelector(
     "a.profile-group-results-card img"
   );
+
+  let color = "var(--lightGrayscale_2)";
+  if (activity === activityStates.active) {
+    color = "var(--lightSecondary)";
+  } else if (activity === activityStates.moderate) {
+    color = "var(--lightPrimary)";
+  } else if (activity === activityStates.low) {
+    color = "var(--lightWarning)";
+  }
+  referenceNode.style.background = color;
 
   titleNode.innerHTML = `${name}`;
   referenceNode.href = href;
