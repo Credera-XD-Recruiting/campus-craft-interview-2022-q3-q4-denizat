@@ -30,6 +30,10 @@ const generateListItemNode = (data) => {
   return clone;
 };
 
+const sortLastName = (a, b) => {
+  return a.split(" ")[1] < b.split(" ")[1] ? -1 : 1;
+};
+
 /**
  * Function which accepts the JSON results from the API, and uses HTML templates
  * to generate the markup needed for the results list
@@ -40,6 +44,16 @@ export const generateFriendsListFromTemplate = (resultsData) => {
   const friendsListSection = document.querySelector(
     "#profile-friends .profile-friends-list"
   );
+
+  resultsData.friends.sort((a, b) => {
+    if (a.topFriend && b.topFriend) {
+      return sortLastName(a.name, b.name);
+    } else {
+      if (a.topFriend) return -1;
+      else if (b.topFriend) return 1;
+      else return sortLastName(a.name, b.name);
+    }
+  });
 
   if (resultsData.friends && resultsData.friends.length > 0) {
     removeChildNodes(friendsListSection);
