@@ -15,7 +15,7 @@ const generateListItemNode = (data) => {
   const titleNode = clone.querySelector("p.page-micro");
   const avatarNode = clone.querySelector(".profile-list-item-avatar");
 
-  nameNode.innerHTML = `${name}`;
+  nameNode.innerHTML = `${name} ${topFriend ? "❤️" : ""}`;
   titleNode.innerHTML = `${jobTitle} @ ${companyName}`;
   avatarNode.src = avatarSrc;
   avatarNode.setAttribute("aria-label", `${name}`);
