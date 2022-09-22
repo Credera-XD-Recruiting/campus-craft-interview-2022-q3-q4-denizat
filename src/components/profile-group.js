@@ -13,7 +13,7 @@ const activityStates = {
  * @return {Node} generated markup for a card
  */
 const generateCardNode = (data) => {
-  const { name, href, image, activity } = data;
+  const { name, href, image, activity, favorite } = data;
   const templateId = "profile-group-results-item-template";
   const resultCardTemplate = document.getElementById(templateId);
   const clone = document.importNode(resultCardTemplate.content, true);
@@ -33,7 +33,7 @@ const generateCardNode = (data) => {
   }
   referenceNode.style.background = color;
 
-  titleNode.innerHTML = `${name}`;
+  titleNode.innerHTML = `${name} ${favorite ? "❤️" : ""}`;
   referenceNode.href = href;
   groupImageNode.src = image;
 
