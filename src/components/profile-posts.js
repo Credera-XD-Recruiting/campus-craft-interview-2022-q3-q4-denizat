@@ -44,6 +44,9 @@ const generateCardNode = (data) => {
   return clone;
 };
 
+const chevron = document.getElementById("chevron");
+let chevronOpen = false;
+
 /**
  * Function which accepts the JSON results from the API, and uses HTML templates
  * to generate the markup needed for the results list
@@ -57,8 +60,18 @@ export const generatePinnedPostsFromTemplate = (resultsData) => {
 
   removeChildNodes(pinnedPostsList);
 
-  if (resultsData.pinnedPost) {
-    const postNode = generateCardNode(resultsData.pinnedPost);
-    pinnedPostsList.appendChild(postNode);
-  }
+  chevron.onclick = () => {
+    window.getSelection().removeAllRanges(); // with out this, rapid clicks cause the pinned post to be highlighted
+    if (chevronOpen) {
+      removeChildNodes(pinnedPostsList);
+      chevron.classList.remove("profile-posts-chevron-transform");
+    } else {
+      chevron.classList.add("profile-posts-chevron-transform");
+      if (resultsData.pinnedPost) {
+        const postNode = generateCardNode(resultsData.pinnedPost);
+        pinnedPostsList.appendChild(postNode);
+      }
+    }
+    chevronOpen = !chevronOpen;
+  };
 };

@@ -9,6 +9,31 @@
 .profile-post-results {
   margin-top: 16px;
 }
+.profile-post-heading {
+  display: flex;
+  flex-direction: row;
+}
+.profile-posts-chevron {
+  background-color: var(--lightGrayscale_2);
+  border-radius: 20px;
+  width: 50px;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  transition: all 0.2s;
+}
+.profile-posts-chevron:hover {
+  background-color: var(--grayscale_2);
+}
+
+.profile-posts-chevron:active {
+  border: solid;
+  border-width: 2px;
+  border-color: var(--grayscale_1);
+}
+
+.profile-posts-chevron-transform {
+  transform: rotate(180deg);
+}
 
 .post-author-avatar {
   display: inline-block;
