@@ -36,13 +36,19 @@
 }
 
 .post-author-avatar {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--grayscale_2);
   height: 75px;
   width: 75px;
   min-width: 75px;
+  align-items: center;
+}
+.post-author-avatar > div {
+  text-align: center;
+  font-size: x-large;
+  width: 100%;
 }
 
 .post-author {

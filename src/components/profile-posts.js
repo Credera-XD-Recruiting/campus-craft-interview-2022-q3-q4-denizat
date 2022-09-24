@@ -39,6 +39,10 @@ const generateCardNode = (data) => {
       `${authorFirstName} ${authorLastName}`
     );
     avatarNode.appendChild(avatarImg);
+  } else {
+    const initials = document.createElement("div");
+    initials.innerHTML = authorFirstName[0] + authorLastName[0];
+    avatarNode.appendChild(initials);
   }
 
   return clone;
