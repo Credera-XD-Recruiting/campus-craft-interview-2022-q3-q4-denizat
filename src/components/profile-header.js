@@ -4,6 +4,7 @@ export const updateProfileInformation = (data) => {
   const { firstName, lastName, avatarSrc, jobTitle, companyName } = data;
   const headerNode = document.querySelector("#profile-header .profile-header");
   const profileAvatarNode = headerNode.querySelector("img");
+  const profileAvatarDiv = headerNode.querySelector(".profile-avatar");
   const nameNode = headerNode.querySelector(".profile-info .profile-info-name");
   const underlineNode = headerNode.querySelector(".profile-underline");
   const infoNode = headerNode.querySelector(".page-paragraph");
@@ -30,5 +31,8 @@ export const updateProfileInformation = (data) => {
 
   if (!avatarSrc) {
     profileAvatarNode.remove();
+    const initials = document.createElement("div");
+    initials.innerHTML = firstName[0] + lastName[0];
+    profileAvatarDiv.appendChild(initials);
   }
 };

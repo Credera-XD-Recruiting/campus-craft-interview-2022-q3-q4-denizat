@@ -15,6 +15,13 @@
   height: 210px;
   width: 210px;
   z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.profile-avatar > div {
+  flex-grow: 1;
+  font-size: 5em;
+  text-align: center;
 }
 
 .profile-avatar img {
