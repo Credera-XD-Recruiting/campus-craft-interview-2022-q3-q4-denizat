@@ -22,6 +22,8 @@ const generateCardNode = (data) => {
   const groupImageNode = clone.querySelector(
     "a.profile-group-results-card img"
   );
+  const heartTemplate = document.getElementById("heart-template");
+  const heartClone = document.importNode(heartTemplate.content, true);
 
   let color = "var(--lightGrayscale_2)";
   if (activity === activityStates.active) {
@@ -33,7 +35,10 @@ const generateCardNode = (data) => {
   }
   referenceNode.style.background = color;
 
-  titleNode.innerHTML = `${name} ${favorite ? "❤️" : ""}`;
+  titleNode.innerHTML = `${name}`;
+  if (favorite) {
+    titleNode.appendChild(heartClone);
+  }
   referenceNode.href = href;
   groupImageNode.src = image;
 

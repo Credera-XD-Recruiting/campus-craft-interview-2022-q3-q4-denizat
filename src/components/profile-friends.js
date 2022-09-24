@@ -15,7 +15,13 @@ const generateListItemNode = (data) => {
   const titleNode = clone.querySelector("p.page-micro");
   const avatarNode = clone.querySelector(".profile-list-item-avatar");
 
-  nameNode.innerHTML = `${name} ${topFriend ? "❤️" : ""}`;
+  const heartTemplate = document.getElementById("heart-template");
+  const heartClone = document.importNode(heartTemplate.content, true);
+
+  nameNode.innerHTML = `${name}`;
+  if (topFriend) {
+    nameNode.appendChild(heartClone);
+  }
   titleNode.innerHTML = `${jobTitle} @ ${companyName}`;
   avatarNode.src = avatarSrc;
   avatarNode.setAttribute("aria-label", `${name}`);
