@@ -36,7 +36,10 @@
   background-color: var(--grayscale_1);
   text-decoration: none;
   color: var(--midnight_black);
-
+  transition: transform 0.6s;
+}
+.profile-group-results-card:hover {
+  transform: scale(1.1);
 }
 
 .profile-group-content {
