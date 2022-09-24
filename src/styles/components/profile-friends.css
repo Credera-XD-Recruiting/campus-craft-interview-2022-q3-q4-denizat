@@ -9,7 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  /* better than nothing */
+  height: 770px;
+
+  overflow: scroll;
+  border-radius: 1em;
 }
 
 .profile-list-item {
